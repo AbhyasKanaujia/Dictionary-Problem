@@ -1,0 +1,3 @@
+class word {
+    // String word;
+}
