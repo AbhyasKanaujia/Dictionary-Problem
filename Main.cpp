@@ -4,6 +4,7 @@
 
 int getWordPostion(std::string word) {
     helperFunctions::validateInput(word);
+    helperFunctions::convertToLower(word);
     int position = 0;
 
     //get ascending word
@@ -26,9 +27,9 @@ int getWordPostion(std::string word) {
 }
 
 int main(int argc, char const* argv[]) {
-    std::string word;
+    std::string word = "Kanaujia";
     std::cout << "Enter a word: ";
-    std::cin >> word;
+    //std::cin >> word;
     // std::string word = "Tango"; // should give 99
 
     std::cout << getWordPostion(word);
